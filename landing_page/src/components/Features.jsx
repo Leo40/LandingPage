@@ -41,33 +41,33 @@ const Features = () => {
                         <button className={`tab-three ${showTabThree && `active-tab`}`} onClick={() => {handleShow("Easy Sharing")}}>Easy Sharing</button>
                     </nav>
 
-                    <article className={`simple-bookmarking ${showTabOne && `show-tab`}`}>                        
+                    <article className={`simple-bookmarking ${showTabOne && `current-tab`}`}>                        
                         <article className="features-shape"></article>
                         <article className="features-tab-1-image"></article>
                         <article className="description-tab-1">
                             <h1>Bookmark in one click</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
-                            <button><small>More Info</small></button>
+                            <button>More Info</button>
                         </article>
                     </article>
 
-                    <article className={`speedy-searching ${showTabTwo && `show-tab`}`}>                        
+                    <article className={`speedy-searching ${showTabTwo && `current-tab`}`}>                        
                         <article className="features-shape"></article>                        
                         <article className="features-tab-2-image"></article>
                         <article className="description-tab-2">
                             <h1>Intelligent search</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
-                            <button><small>More Info</small></button>
+                            <button>More Info</button>
                         </article>
                     </article>
 
-                    <article className={`easy-sharing ${showTabThree && `show-tab`}`}>                        
+                    <article className={`easy-sharing ${showTabThree && `current-tab`}`}>                        
                         <article className="features-shape"></article>                        
                         <article className="features-tab-3-image"></article>
                         <article className="description-tab-3">
                             <h1>Share your bookmarks</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
-                            <button><small>More Info</small></button>
+                            <button>More Info</button>
                         </article>
                     </article>
 

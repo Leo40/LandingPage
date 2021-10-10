@@ -3,11 +3,12 @@ import React from 'react'
 const Header = () => {
     return (
         <nav className="nav-bar">
-            <div>
+            <div>                
+                <span className="bookmark">
                 <span className="bookmark-icon"></span>
-                <span className="bookmark">BOOKMARK</span>
+                BOOKMARK</span>
             </div>
-            <article>
+            <article className="nav-bar-items">
                 <button>FEATURES</button>
                 <button>PRICING</button>
                 <button>CONTACT</button>
