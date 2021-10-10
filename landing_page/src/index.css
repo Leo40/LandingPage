@@ -25,9 +25,12 @@ color: hsl(229, 31%, 21%);
 font-size: 1.5rem;
 }
 
+h3 {
+  color: hsl(229, 31%, 21%);
+}
+
 button {
   font-size: 0.5rem;
-
 }
 
 .nav-bar{
@@ -124,9 +127,10 @@ p {
 .hero-description 
 .chrome-button, 
 .firefox-button,
-.current-tab button {  
+.current-tab button, 
+.logos button {  
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: none;
   margin-right: 10px;
@@ -135,7 +139,8 @@ p {
 .hero 
 .hero-description 
 .chrome-button, 
-.current-tab button {
+.current-tab button, 
+.logos button {
   background-color: hsl(231, 69%, 60%);
 }
 
@@ -281,12 +286,46 @@ background-image: url("./images/illustration-features-tab-3.svg");
   padding: 20px;
 }
 
-.chrome-logo, 
-.firefox-logo,
-.opera-logo {
+.chrome-logo-card, 
+.firefox-logo-card,
+.opera-logo-card {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos
+.chrome-logo, 
+.logos 
+.firefox-logo,
+.logos
+.opera-logo {
+  display: flex;  
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 110px;
+  padding: 70px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+}
+
+.logos
+.chrome-logo {
+  background-image: url("./images/logo-chrome.svg");
+}
+
+.logos
+.firefox-logo {
+  background-image: url("./images/logo-firefox.svg");
+}
+
+.logos
+.opera-logo {
+  background-image: url("./images/logo-opera.svg");
+}
+ 
+.logos p {
+  font-size: 0.8rem;
 }

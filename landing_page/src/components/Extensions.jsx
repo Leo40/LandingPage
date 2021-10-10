@@ -8,20 +8,23 @@ const Extensions = () => {
                 <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at veritatis autem fuga, quisquam a!</article>
 
                 <article className="logos">
-                    <article className="chrome-logo">
-                        <h1>Add to Chrome</h1>
+                    <article className="chrome-logo-card">
+                        <section className="chrome-logo"></section>
+                        <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
                         <button>Add and Install Extension</button>
                     </article>
 
-                    <article className="firefox-logo">
-                        <h1>Add to Chrome</h1>
+                    <article className="firefox-logo-card">
+                        <section className="firefox-logo"></section>
+                        <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
                         <button>Add and Install Extension</button>
                     </article>
 
-                    <article className="opera-logo">
-                        <h1>Add to Chrome</h1>
+                    <article className="opera-logo-card"> 
+                        <section className="opera-logo"></section>                       
+                        <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
                         <button>Add and Install Extension</button>
                     </article>
