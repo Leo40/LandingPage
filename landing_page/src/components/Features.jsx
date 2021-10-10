@@ -3,12 +3,26 @@ import { useState } from 'react';
 
 const Features = () => {
 
-    const [showTabOne, setShowTabOne] = useState(false);
+    const [showTabOne, setShowTabOne] = useState(true);
     const [showTabTwo, setShowTabTwo] = useState(false);
     const [showTabThree, setShowTabThree] = useState(false);
 
-    const handleShow = () => {
-        setShow(true)
+    const handleShow = (text) => {
+        if(text === "Simple Bookmarking"){
+            setShowTabOne(true);
+            setShowTabTwo(false);
+            setShowTabThree(false);
+        }
+        else if(text === "Speedy Searching"){
+            setShowTabOne(false);
+            setShowTabTwo(true);
+            setShowTabThree(false);
+        }
+        else if (text === "Easy Sharing"){        
+            setShowTabOne(false);
+            setShowTabTwo(false);
+            setShowTabThree(true);
+        }
     }
 
     return (
@@ -22,24 +36,44 @@ const Features = () => {
                 <section className="features-tabs">
 
                     <nav className="features-tabs-bar">
-                        <button onClick>Simple Bookmarking</button>
-                        <button>Speedy Searching</button>
-                        <button>Easy Sharing</button>
+                        <button className={`tab-one ${showTabOne && `active-tab`}`} onClick={() => {handleShow("Simple Bookmarking")}}>Simple Bookmarking</button>
+                        <button className={`tab-two ${showTabTwo && `active-tab`}`} onClick={() => {handleShow("Speedy Searching")}}>Speedy Searching</button>
+                        <button className={`tab-three ${showTabThree && `active-tab`}`} onClick={() => {handleShow("Easy Sharing")}}>Easy Sharing</button>
                     </nav>
 
-                    <article className="simple-bookmarking" onClick={handleShow}>
-                        
-                        <div className="features-tab-1-shape"></div>
-                        
+                    <article className={`simple-bookmarking ${showTabOne && `show-tab`}`}>                        
+                        <article className="features-shape"></article>
                         <article className="features-tab-1-image"></article>
+                        <article className="description-tab-1">
+                            <h1>Bookmark in one click</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
+                            <button><small>More Info</small></button>
+                        </article>
+                    </article>
+
+                    <article className={`speedy-searching ${showTabTwo && `show-tab`}`}>                        
+                        <article className="features-shape"></article>                        
+                        <article className="features-tab-2-image"></article>
+                        <article className="description-tab-2">
+                            <h1>Intelligent search</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
+                            <button><small>More Info</small></button>
+                        </article>
+                    </article>
+
+                    <article className={`easy-sharing ${showTabThree && `show-tab`}`}>                        
+                        <article className="features-shape"></article>                        
+                        <article className="features-tab-3-image"></article>
+                        <article className="description-tab-3">
+                            <h1>Share your bookmarks</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
+                            <button><small>More Info</small></button>
+                        </article>
                     </article>
 
                 </section>
 
-
-
             </section>
-
 
         </div>
     )
