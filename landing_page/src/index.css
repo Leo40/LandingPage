@@ -128,7 +128,8 @@ p {
 .chrome-button, 
 .firefox-button,
 .current-tab button, 
-.logos button {  
+.logos button,
+.faqs button {  
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -140,7 +141,8 @@ p {
 .hero-description 
 .chrome-button, 
 .current-tab button, 
-.logos button {
+.logos button,
+.faqs button {
   background-color: hsl(231, 69%, 60%);
 }
 
@@ -281,8 +283,11 @@ background-image: url("./images/illustration-features-tab-3.svg");
 
 .extensions-description
 .logos {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  min-height: 100%;
+  /* background-color: aqua; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -293,14 +298,26 @@ background-image: url("./images/illustration-features-tab-3.svg");
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+  /* border: solid 1px #666; */
 }
 
-.logos
+.chrome-logo-card, 
+.firefox-logo-card,
+.opera-logo-card {
+  box-shadow: 1px 1px 1px 1px #666;
+}
+
+.firefox-logo-card {
+  margin-top: 30px;
+}
+
+.opera-logo-card {
+  margin-top: 60px;
+}
+
 .chrome-logo, 
-.logos 
 .firefox-logo,
-.logos
 .opera-logo {
   display: flex;  
   background-repeat: no-repeat;
@@ -311,21 +328,78 @@ background-image: url("./images/illustration-features-tab-3.svg");
   align-items: center;
 }
 
-.logos
 .chrome-logo {
   background-image: url("./images/logo-chrome.svg");
 }
 
-.logos
 .firefox-logo {
   background-image: url("./images/logo-firefox.svg");
 }
 
-.logos
 .opera-logo {
   background-image: url("./images/logo-opera.svg");
 }
  
 .logos p {
   font-size: 0.8rem;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.faqs h1,
+.faqs p,
+.faqs button  {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.faqs-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.faqs-description p {
+  display: flex;
+  justify-self: center;
+  padding: 20px 0px 40px 0px;  
+  width: 600px;
+}
+
+.questions {
+  margin-bottom: 40px;
+}
+
+.faqs .questions p {
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+  padding: 20px 0px;
+  border-top: 1px solid rgb(201, 197, 197);
+  border-bottom: 1px solid rgb(201, 197, 197);
+  color: hsl(229, 31%, 21%);
+  font-weight: 400;
+}
+
+.question p {
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  background-image: url("./images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 10px;
 }
