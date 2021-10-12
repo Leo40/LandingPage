@@ -349,7 +349,7 @@ background-image: url("./images/illustration-features-tab-3.svg");
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin: 40px 0px 60px 0px;
 }
 
 .faqs h1,
@@ -403,3 +403,26 @@ background-image: url("./images/illustration-features-tab-3.svg");
   position: absolute;
   right: 10px;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(231, 69%, 60%);
+  height: 300px;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-cta h1 {
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+}
+
