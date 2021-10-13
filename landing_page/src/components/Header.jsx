@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const Header = () => {
     return (
@@ -9,10 +10,10 @@ const Header = () => {
                 BOOKMARK</span>
             </div>
             <article className="nav-bar-items">
-                <button>FEATURES</button>
-                <button>PRICING</button>
-                <button>CONTACT</button>
-                <button>LOGIN</button>
+                <Button text={'FEATURES'} color={'black'}/>
+                <Button text={'PRICING'} color={'black'}/>
+                <Button text={'CONTACT'} color={'black'}/>
+                <Button text={'LOGIN'} color={'black'}/>
             </article>
             <div></div>
         </nav>

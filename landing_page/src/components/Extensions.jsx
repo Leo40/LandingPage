@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const Extensions = () => {
     return (
@@ -12,21 +13,21 @@ const Extensions = () => {
                         <section className="chrome-logo"></section>
                         <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
-                        <button>Add and Install Extension</button>
+                        <Button text={"Add and Install Extension"}></Button>
                     </article>
 
                     <article className="firefox-logo-card">
                         <section className="firefox-logo"></section>
                         <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
-                        <button>Add and Install Extension</button>
+                        <Button text={"Add and Install Extension"}></Button>
                     </article>
 
                     <article className="opera-logo-card"> 
                         <section className="opera-logo"></section>                       
                         <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
-                        <button>Add and Install Extension</button>
+                        <Button text={"Add and Install Extension"}></Button>
                     </article>
                 </article>
                 

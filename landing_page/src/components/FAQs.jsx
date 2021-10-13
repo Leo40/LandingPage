@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const FAQs = () => {
     return (
@@ -22,7 +23,7 @@ const FAQs = () => {
                     <p>What about other Chromium browsers?<i className="arrow"></i></p>
                 </div>
             </article>
-            <button>More Info</button>
+            <Button text={"More Info"}></Button>
         </section>
     )
 }

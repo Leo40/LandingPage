@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Button from './Button';
 
 const Features = () => {
 
@@ -47,7 +48,7 @@ const Features = () => {
                         <article className="description-tab-1">
                             <h1>Bookmark in one click</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
-                            <button>More Info</button>
+                            <Button text={"More Info"}></Button>
                         </article>
                     </article>
 
@@ -57,7 +58,7 @@ const Features = () => {
                         <article className="description-tab-2">
                             <h1>Intelligent search</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
-                            <button>More Info</button>
+                            <Button text={"More Info"}></Button>
                         </article>
                     </article>
 
@@ -67,7 +68,7 @@ const Features = () => {
                         <article className="description-tab-3">
                             <h1>Share your bookmarks</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
-                            <button>More Info</button>
+                            <Button text={"More Info"}></Button>
                         </article>
                     </article>
 

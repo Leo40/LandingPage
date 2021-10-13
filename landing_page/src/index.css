@@ -123,38 +123,17 @@ p {
   margin-bottom: 40px;
 }
 
-.hero 
-.hero-description 
-.chrome-button, 
-.firefox-button,
-.current-tab button, 
-.logos button,
-.faqs button {  
+button {  
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   margin-right: 10px;
-}
-
-.hero 
-.hero-description 
-.chrome-button, 
-.current-tab button, 
-.logos button,
-.faqs button {
   background-color: hsl(231, 69%, 60%);
 }
 
-.hero 
-.hero-description 
-.firefox-button {
-  /* background-color: grey; */
-  color: black;
-}
-
-.features {
-  /* padding: 40px; */
+button:hover {
+  color: white;
 }
 
 .features-tabs {
@@ -184,6 +163,7 @@ p {
 .tab-two,
 .tab-three {
   box-sizing: border-box;
+  border-radius: 0px;
   background-color: white;
   border: none;
   padding: 20px 40px;
@@ -191,11 +171,6 @@ p {
   font-size: 0.8rem;
   font-weight: 400;    
   color: rgb(124, 118, 118);
-}
-
-.features 
-button:active {
-  
 }
 
 .simple-bookmarking, 
@@ -406,6 +381,7 @@ background-image: url("./images/illustration-features-tab-3.svg");
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsl(231, 69%, 60%);
