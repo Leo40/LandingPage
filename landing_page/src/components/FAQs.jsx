@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from './Button';
+import Title from './Title';
 
 const FAQs = () => {
     return (
         <section className="faqs">
             <article className="faqs-description">
-                <h1>Frequently Asked Questions</h1>
+                <Title text={"Frequently Asked Questions"} />
                 <p>Here are some of our FAQs. If you have any other questions you'd like answered, please feel free to email us.</p>                
             </article>
 
@@ -23,7 +24,7 @@ const FAQs = () => {
                     <p>What about other Chromium browsers?<i className="arrow"></i></p>
                 </div>
             </article>
-            <Button text={"More Info"}></Button>
+            <Button text={"More Info"} />
         </section>
     )
 }

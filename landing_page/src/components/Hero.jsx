@@ -11,8 +11,7 @@ const Hero = () => {
                 <Button text={"Get it on Firefox"} backgroundColor={"#999"}></Button>
             </article>
             
-            <div className="background-shape"></div>           
-            
+            <div className="background-shape"></div>                       
             <article className="hero-image"></article>
         </section>
     )

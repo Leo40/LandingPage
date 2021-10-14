@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Button from './Button';
+import Title from './Title';
 
 const Features = () => {
 
@@ -30,7 +31,7 @@ const Features = () => {
         <div>
             <section className="features">
                 <article className="features-description">
-                    <h1>Features</h1>
+                    <Title text={"Features"} />
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </article>
 
@@ -46,9 +47,9 @@ const Features = () => {
                         <article className="features-shape"></article>
                         <article className="features-tab-1-image"></article>
                         <article className="description-tab-1">
-                            <h1>Bookmark in one click</h1>
+                            <Title text={"Bookmark in one click"} />
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
-                            <Button text={"More Info"}></Button>
+                            <Button text={"More Info"} />
                         </article>
                     </article>
 
@@ -56,9 +57,9 @@ const Features = () => {
                         <article className="features-shape"></article>                        
                         <article className="features-tab-2-image"></article>
                         <article className="description-tab-2">
-                            <h1>Intelligent search</h1>
+                            <Title text={"Intelligent search"} />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
-                            <Button text={"More Info"}></Button>
+                            <Button text={"More Info"} />
                         </article>
                     </article>
 
@@ -66,9 +67,9 @@ const Features = () => {
                         <article className="features-shape"></article>                        
                         <article className="features-tab-3-image"></article>
                         <article className="description-tab-3">
-                            <h1>Share your bookmarks</h1>
+                            <Title text={"Share your bookmarks"} />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
-                            <Button text={"More Info"}></Button>
+                            <Button text={"More Info"} />
                         </article>
                     </article>
 
