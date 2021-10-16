@@ -132,10 +132,6 @@ button {
   background-color: hsl(231, 69%, 60%);
 }
 
-button:hover {
-  color: white;
-}
-
 .features-tabs {
   padding: 50px 0px;  
 }
@@ -360,6 +356,7 @@ background-image: url("./images/illustration-features-tab-3.svg");
   padding: 20px 0px;
   border-top: 1px solid rgb(201, 197, 197);
   border-bottom: 1px solid rgb(201, 197, 197);
+  margin:-1px 0px -1px 0px;
   color: hsl(229, 31%, 21%);
   font-weight: 400;
 }
@@ -386,6 +383,7 @@ background-image: url("./images/illustration-features-tab-3.svg");
   align-items: center;
   background-color: hsl(231, 69%, 60%);
   height: 300px;
+  position: relative;
 }
 
 .footer-cta {
@@ -402,3 +400,17 @@ background-image: url("./images/illustration-features-tab-3.svg");
   padding: 30px;
 }
 
+.footer input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  width: 200px;
+  font-size: 8px;
+}
+
+.footer button {
+  position: absolute;
+  right: 450px;
+  bottom: 79px;
+}
