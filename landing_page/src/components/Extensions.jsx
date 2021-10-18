@@ -2,6 +2,8 @@ import React from 'react';
 import Button from './Button';
 
 const Extensions = () => {    
+    const logos = ["chrome", "firefox", "opera"]
+
     return (
         <section className="extensions">
             <article className="extensions-description">
@@ -9,26 +11,16 @@ const Extensions = () => {
                 <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at veritatis autem fuga, quisquam a!</article>
 
                 <article className="logos">
-                    <article className="chrome-logo-card">
-                        <section className="chrome-logo"></section>
-                        <h3>Add to Chrome</h3>
-                        <p>Minimum version 62</p>
-                        <Button text={"Add and Install Extension"} />
-                    </article>
-
-                    <article className="firefox-logo-card">
-                        <section className="firefox-logo"></section>
-                        <h3>Add to Chrome</h3>
-                        <p>Minimum version 62</p>
-                        <Button text={"Add and Install Extension"} />
-                    </article>
-
-                    <article className="opera-logo-card"> 
-                        <section className="opera-logo"></section>                       
-                        <h3>Add to Chrome</h3>
-                        <p>Minimum version 62</p>
-                        <Button text={"Add and Install Extension"} />
-                    </article>
+                    {logos.map((logo) => {
+                        return(
+                            <article className={`${logo}-logo-card`}>
+                                <section className={`${logo}-logo`}></section>
+                                <h3>Add to {logo}</h3>
+                                <p>Minimum version 62</p>
+                                <Button text={"Add and Install Extension"} />
+                            </article>
+                        )                        
+                    })}
                 </article>
                 
             </article>
