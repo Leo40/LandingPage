@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import Title from './Title';
 
-const Extensions = () => {
+const Extensions = () => {    
     return (
         <section className="extensions">
             <article className="extensions-description">
