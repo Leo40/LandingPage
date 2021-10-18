@@ -1,12 +1,11 @@
 import React from 'react';
 import Button from './Button';
-import Title from './Title';
 
 const Extensions = () => {    
     return (
         <section className="extensions">
             <article className="extensions-description">
-                <Title text={"Download the extension"} />
+                <h1>Download the extension</h1>
                 <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at veritatis autem fuga, quisquam a!</article>
 
                 <article className="logos">

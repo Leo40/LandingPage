@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import Button from './Button';
-import Title from './Title';
 
 const Features = () => {
 
@@ -31,12 +30,11 @@ const Features = () => {
         <div>
             <section className="features">
                 <article className="features-description">
-                    <Title text={"Features"} />
+                    <p>Features</p>
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </article>
 
                 <section className="features-tabs">
-
                     <nav className="features-tabs-bar">
                         <button className={`tab-one ${showTabOne && `active-tab`}`} onClick={() => {handleShow("Simple Bookmarking")}}>Simple Bookmarking</button>
                         <button className={`tab-two ${showTabTwo && `active-tab`}`} onClick={() => {handleShow("Speedy Searching")}}>Speedy Searching</button>
@@ -47,7 +45,7 @@ const Features = () => {
                         <article className="features-shape"></article>
                         <article className="features-tab-1-image"></article>
                         <article className="description-tab-1">
-                            <Title text={"Bookmark in one click"} />
+                            <p>Bookmark in one click</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
                             <Button text={"More Info"} />
                         </article>
@@ -57,7 +55,7 @@ const Features = () => {
                         <article className="features-shape"></article>                        
                         <article className="features-tab-2-image"></article>
                         <article className="description-tab-2">
-                            <Title text={"Intelligent search"} />
+                            <p>Intelligent search</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
                             <Button text={"More Info"} />
                         </article>
@@ -67,7 +65,7 @@ const Features = () => {
                         <article className="features-shape"></article>                        
                         <article className="features-tab-3-image"></article>
                         <article className="description-tab-3">
-                            <Title text={"Share your bookmarks"} />
+                            <p>Share your bookmarks</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
                             <Button text={"More Info"} />
                         </article>
