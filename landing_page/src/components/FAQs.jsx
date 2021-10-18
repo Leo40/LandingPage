@@ -3,6 +3,7 @@ import Button from './Button';
 import Title from './Title';
 
 const FAQs = () => {
+    const questions = ["What is Bookmark?", "How can I request a new browser?", "Is there a mobile app?", "What about other Chromium browsers?"]
     return (
         <section className="faqs">
             <article className="faqs-description">
@@ -11,18 +12,11 @@ const FAQs = () => {
             </article>
 
             <article className="questions">
-                <div className="question"> 
-                    <p>What is Bookmark?<i className="arrow"></i></p>
-                </div>
-                <div className="question">
-                    <p>How can I request a new browser?<i className="arrow"></i></p>
-                </div>
-                <div className="question">
-                    <p>Is there a mobile app?<i className="arrow"></i></p>
-                </div>
-                <div className="question">
-                    <p>What about other Chromium browsers?<i className="arrow"></i></p>
-                </div>
+                {questions.map((question)=>{
+                   return <div className="question"> 
+                        <p>{question}<i className="arrow"></i></p>
+                    </div> 
+                })}
             </article>
             <Button text={"More Info"} />
         </section>
