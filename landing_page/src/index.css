@@ -172,7 +172,7 @@ button {
 .simple-bookmarking, 
 .speedy-searching,
 .easy-sharing {
-  display: none;  
+  /* display: none;   */
   position: relative;
   padding-left: 100px;
   padding-top: 50px;
@@ -195,8 +195,8 @@ button {
 .features-tab-1-image,
 .features-tab-2-image,
 .features-tab-3-image {
-  align-self: flex-end;  
-  justify-self: flex-end;  
+  align-self: flex-end;
+  justify-self: flex-end;
   height: 450px; 
   width: 550px;
   background-repeat: no-repeat;
@@ -215,15 +215,6 @@ background-image: url("./images/illustration-features-tab-1.svg");
 background-image: url("./images/illustration-features-tab-3.svg");  
 }
 
-
-.current-tab,
-.current-tab,
-.current-tab {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
 .description-tab-1, 
 .description-tab-2, 
 .description-tab-3 {
@@ -233,11 +224,11 @@ background-image: url("./images/illustration-features-tab-3.svg");
   align-items: flex-start;
 }
 
-.current-tab p {
+.tab-one p {
   padding: 25px 200px 25px 0px;
 } 
 
-.active-tab {
+.show-tab {
   box-sizing: border-box;
   border-bottom: 3px solid hsl(0, 94%, 66%);
   color: #333;

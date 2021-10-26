@@ -3,26 +3,32 @@ import { useState } from 'react';
 import Button from './Button';
 
 const Features = () => {
-
-    const [showTabOne, setShowTabOne] = useState(true);
-    const [showTabTwo, setShowTabTwo] = useState(false);
-    const [showTabThree, setShowTabThree] = useState(false);
+    const tabs = [
+        {
+            name: "simple-bookmarking",
+            title: "Bookmark in one click",
+        },
+        {
+            name: "speedy-searching",
+            title: "Intelligent search",
+        },
+        {
+            name: "easy-sharing",
+            title: "Share your bookmarks",
+        }
+    ];
+    
+    const [currentTab, setCurrentTab] = useState("tab-one");
 
     const handleShow = (text) => {
         if(text === "Simple Bookmarking"){
-            setShowTabOne(true);
-            setShowTabTwo(false);
-            setShowTabThree(false);
+            setCurrentTab("tab-one");
         }
         else if(text === "Speedy Searching"){
-            setShowTabOne(false);
-            setShowTabTwo(true);
-            setShowTabThree(false);
+            setCurrentTab("tab-two");
         }
         else if (text === "Easy Sharing"){        
-            setShowTabOne(false);
-            setShowTabTwo(false);
-            setShowTabThree(true);
+            setCurrentTab("tab-three");
         }
     }
 
@@ -36,45 +42,26 @@ const Features = () => {
 
                 <section className="features-tabs">
                     <nav className="features-tabs-bar">
-                        <button className={`tab-one ${showTabOne && `active-tab`}`} onClick={() => {handleShow("Simple Bookmarking")}}>Simple Bookmarking</button>
-                        <button className={`tab-two ${showTabTwo && `active-tab`}`} onClick={() => {handleShow("Speedy Searching")}}>Speedy Searching</button>
-                        <button className={`tab-three ${showTabThree && `active-tab`}`} onClick={() => {handleShow("Easy Sharing")}}>Easy Sharing</button>
+                        <button className={`tab-one ${currentTab === `tab-one`? `show-tab` : ''}`} onClick={() => {handleShow("Simple Bookmarking")}}>Simple Bookmarking</button>
+                        <button className={`tab-two ${currentTab === `tab-two`? `show-tab` : ''}`} onClick={() => {handleShow("Speedy Searching")}}>Speedy Searching</button>
+                        <button className={`tab-three ${currentTab === `tab-three`? `show-tab` : ''}`} onClick={() => {handleShow("Easy Sharing")}}>Easy Sharing</button>
                     </nav>
 
-                    <article className={`simple-bookmarking ${showTabOne && `current-tab`}`}>                        
-                        <article className="features-shape"></article>
-                        <article className="features-tab-1-image"></article>
-                        <article className="description-tab-1">
-                            <p>Bookmark in one click</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
-                            <Button text={"More Info"} />
-                        </article>
-                    </article>
-
-                    <article className={`speedy-searching ${showTabTwo && `current-tab`}`}>                        
-                        <article className="features-shape"></article>                        
-                        <article className="features-tab-2-image"></article>
-                        <article className="description-tab-2">
-                            <p>Intelligent search</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sit voluptate illo vero voluptatibus perferendis!</p>
-                            <Button text={"More Info"} />
-                        </article>
-                    </article>
-
-                    <article className={`easy-sharing ${showTabThree && `current-tab`}`}>                        
-                        <article className="features-shape"></article>                        
-                        <article className="features-tab-3-image"></article>
-                        <article className="description-tab-3">
-                            <p>Share your bookmarks</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde sit dignissimos omnis, minus fugiat.</p>
-                            <Button text={"More Info"} />
-                        </article>
-                    </article>
-
+                    {tabs.map((tab, index) => {
+                        return (
+                            <article className={`${tab.name} ${currentTab}`}>                        
+                                <article className="features-shape"></article>
+                                <article className={`features-tab-${index + 1}-image`}></article>
+                                <article className={`description-tab-${index + 1}`}>
+                                    <p>{tab.title}</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
+                                    <Button text={"More Info"} />
+                                </article>
+                            </article>                            
+                        )
+                    })}
                 </section>
-
             </section>
-
         </div>
     )
 }

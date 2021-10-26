@@ -7,7 +7,7 @@ const FeatureTab = ({ name, }) => {
             <article className="features-tab-1-image"></article>
             <article className="description-tab-1">
                 <Title text={"Bookmark in one click"} />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestias pariatur dolore odit? Asperiores.</p>
+                <p>This is a description tab.</p>
                 <Button text={"More Info"} />
             </article>
         </article>
